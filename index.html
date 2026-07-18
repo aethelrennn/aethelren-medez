@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RENO WEBSITE — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-brand">RW<span class="dot">.</span></div>
+    <div class="nav-links">
+      <a href="#work" data-text="Work">Work</a>
+      <a href="#skills" data-text="Skills">Skills</a>
+      <a href="#process" data-text="Process">Process</a>
+      <a href="#contact" data-text="Contact">Contact</a>
+    </div>
+    <button class="nav-cta" id="nav-cta">Hire Me</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+
+<section class="hero" id="hero">
+
+    <div class="hero-grid-lines" aria-hidden="true">
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="hero-layout">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+
+            <div class="hero-badge" data-reveal>
+                <span class="badge-dot"></span>
+                Available for Projects · Indonesia
+            </div>
+
+            <h1 class="hero-title" data-reveal>
+                <span class="line">ASPIRING</span>
+                <span class="line accent-line">SOFTWARE</span>
+                <span class="line">&amp; ENGINEER.</span>
+            </h1>
+
+            <p class="hero-sub" data-reveal>
+                Exploring the world of web development,  &amp; 
+                software engineering, and digital product design through hands-on learning and personal projects.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+
+                <a href="#work" class="btn-primary">
+                    <span>EXPLORE MY JOURNEY</span>
+
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M3 8h10M9 4l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </a>
+
+                <a href="#contact" class="btn-ghost">
+                    Let's Talk
+                </a>
+
+            </div>
+
+            <div class="hero-stats" data-reveal>
+
+                <div class="stat">
+                    <span class="stat-num" data-count="01">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Portfolio Website</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat">
+                    <span class="stat-num" data-count="02">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years of Learning</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat">
+                    <span class="stat-num" data-count="3">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Passion to Learn</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="hero-right">
+
+            <div class="hero-photo" data-reveal>
+
+                <div class="photo-glow"></div>
+
+                <div class="photo-ring">
+
+                    <img
+                        src="assets/reeman.png"
+                        alt="Reno">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+    </div>
+
+</section>
+
+    <!-- ═══════════════════════════ MARQUEE ═══════════════════════════ -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <span>UI Design</span><span class="sep">✦</span>
+          <span>Junior-Stack Dev</span><span class="sep">✦</span>
+          <span>Adobe Photoshop</span><span class="sep">✦</span>
+          <span>Brand Identity</span><span class="sep">✦</span>
+          <span>Node.Js</span><span class="sep">✦</span>
+          <span>Figma</span><span class="sep">✦</span>
+          <span>React / Next.js</span><span class="sep">✦</span>
+          <span>After Effects</span><span class="sep">✦</span>
+          <!-- Duplicate for seamless loop -->
+          <span>UI Design</span><span class="sep">✦</span>
+          <span>Junior-Stack Dev</span><span class="sep">✦</span>
+          <span>Adobe Photoshop</span><span class="sep">✦</span>
+          <span>Brand Identity</span><span class="sep">✦</span>
+          <span>Node.Js</span><span class="sep">✦</span>
+          <span>Figma</span><span class="sep">✦</span>
+          <span>React / Next.js</span><span class="sep">✦</span>
+          <span>After Effects</span><span class="sep">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-left" data-reveal>
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">I Build Skills<br />That Create Value. <em>remember.</em></h2>
+        </div>
+        <div class="about-right" data-reveal>
+          <p>
+          I'm an Information Systems undergraduate based in Indonesia with a strong curiosity for technology and digital innovation
+          My journey began with graphic design and computer troubleshooting, which gradually led me into web development, user experience, and modern software engineering
+          I enjoy exploring how technology can solve real-world problems through thoughtful design and clean, maintainable code
+          </p>
+          <p>
+            Beyond coding, I have experience managing social media, working with Windows systems, software installation, and basic technical support
+            I'm currently expanding my knowledge in JavaScript, modern web technologies, and Artificial Intelligence while staying up to date with the latest AI models and industry trends Every project
+            project I build is another step toward becoming a better software engineer.</strong>
+          </p>
+          <div class="tool-chips">
+            <span>Figma</span><span>React</span><span>Next.js</span>
+            <span>Photoshop</span><span>After Effects</span><span>Node.js</span>
+            <span>Visual Studio</span><span>Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ WORK ═══════════════════════════ -->
+    <section class="work" id="work">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Featured Projects</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card project-card--large" data-reveal>
+          <div class="project-image">
+            <img src="https://cdn.dribbble.com/userupload/48407793/file/281072cff1e82d3c8a9a925e57bd77f1.png?resize=1024x768&vertical=center" alt="First Project" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+            </div>
+            <h3 class="project-title">FIRST PROJECT</h3>
+            <p class="project-desc">My first portfolio website built to showcase
+              my skills, learning journey, and future projects</p>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <img src="https://imgs.search.brave.com/gVDNtex_qFpg2ddqbt8uIlWd--JqPX_DUR-3r9VBK7o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZyZWUtdmVjdG9y/L2Fic3RyYWN0LWNv/bWluZy1zb29uLWhh/bGZ0b25lLXN0eWxl/LWJhY2tncm91bmQt/ZGVzaWduXzEwMTct/MjcyODIuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw" alt="COMING SOON" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>React Native</span><span>TypeScript</span>
+            </div>
+            <h3 class="project-title">COMING SOON</h3>
+            <p class="project-desc">My next project will be published here</p>
+            <a href="#" class="project-link">
+              Stay Tuned
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <img src="https://imgs.search.brave.com/gVDNtex_qFpg2ddqbt8uIlWd--JqPX_DUR-3r9VBK7o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZyZWUtdmVjdG9y/L2Fic3RyYWN0LWNv/bWluZy1zb29uLWhh/bGZ0b25lLXN0eWxl/LWJhY2tncm91bmQt/ZGVzaWduXzEwMTct/MjcyODIuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw" alt="COMING SOON" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>WebGL</span><span>After Effects</span>
+            </div>
+            <h3 class="project-title">COMING SOON</h3>
+            <p class="project-desc">My next project will be published here</p>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+    <section class="skills" id="skills">
+      <div class="skills-inner">
+        <div class="section-header" data-reveal>
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Technical Process</h2>
+        </div>
+
+        <div class="skills-grid" data-reveal>
+
+          <div class="skill-block">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Design Tools</h4>
+            <p>Creative Suite · Figma · Illustrator · Photoshop · CorelDRAW</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="95"></div>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Front-End Dev</h4>
+            <p>React · Next.js · TypeScript · Tailwind · GSAP · WebGL</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="95"></div>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polygon points="23 7 16 12 23 17 23 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="5" width="15" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h4>Motion & 3D</h4>
+            <p>After Effects · Cinema 4D · Lottie · WebGL · Motion Design</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="85"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>UI/UX Design</h4>
+            <p>User Research · Prototyping · Design Systems · Usability Testing</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="95"></div>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROCESS ═══════════════════════════ -->
+    <section class="process" id="process">
+      <div class="section-header" data-reveal>
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Learning Path</h2>
+      </div>
+
+      <div class="process-steps">
+
+        <div class="process-step" data-reveal>
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h4>Information Systems</h4>
+            <p></p>Started my journey as an Information Systems undergraduate, learning the fundamentals of technology, databases, business processes, and software development</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h4>Web Development</h4>
+            <p>Building responsive websites using HTML, CSS, and JavaScript while continuously improving my frontend development skills</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h4>AI Exploration</h4>
+            <p>Exploring Artificial Intelligence, Large Language Models (LLMs), and modern AI tools to understand how intelligent systems can solve real-world problems</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h4>Technical Support</h4>
+            <p>Experienced with Windows installation, software configuration, troubleshooting, and helping users solve common technical issues</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h4>Digital Creativity</h4>
+            <p>Familiar with graphic design, content creation, and social media management to communicate ideas through engaging digital experiences</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TIMELINE ═══════════════════════════ -->
+    <section class="timeline">
+      <div class="section-header" data-reveal>
+        <span class="section-label">The Journey</span>
+        <h2 class="section-title">My Story</h2>
+      </div>
+
+      <div class="timeline-items">
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-era current">Present</span>
+            <h4>Information</h4>
+            <p>Currently pursuing a Bachelor's degree in Information Systems while building a strong foundation in software development, problem-solving, and modern technologies. Every semester is an opportunity to grow both academically and professionally</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-era">Current Focus</span>
+            <h4>Web Development & AI</h4>
+            <p>Actively learning HTML, CSS, JavaScript, and modern web technologies while exploring Artificial Intelligence, Large Language Models, and prompt engineering to understand the future of digital innovation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <span class="tl-era">The Beginning</span>
+            <h4>Passion for Technology</h4>
+            <p>Started by exploring computers, software, graphic design, and digital content creation. Today, that curiosity continues to drive my passion for learning and innovation</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="contact-inner" data-reveal>
+        <div class="contact-text">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="contact-title">GREAT IDEAS DESERVE GREAT EXECUTION<br />idea? <em>Let's build.</em></h2>
+          <p>Currently open for freelance projects, full-time roles, or just a good conversation about design and code.</p>
+          <div class="contact-links">
+            <a href="mailto:renoinpublic@gmail.com" class="contact-email">renoinpublic@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Reno Dev" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="uknowuser@gmail.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            ✓ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-big">RW<span class="dot">.</span></span>
+        <p>RENO FRESHYLA ADITYA PRATAMA & UI/UX Designer<br />Based in Indonesia.</p>
+      </div>
+      <div class="footer-socials">
+       <a href="https://github.com/aethelrennn/aeth666.git" >
+        github
+       </a>
+      
+       <a href="https://www.linkedin.com/in/reno-freshyla-aditya-pratama-865982417">
+        linkedin
+       </a>
+       
+       <a href="https://dribbble.com/reno-freshyla-aditya-pratama">
+        dribble
+       </a>
+       
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.113.82-.268.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.107-.775.418-1.305 .762-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31 .465-2.38 1.
+       </a>
+       <a href="" target="_blank" rel="noopener noreferrer">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20,9V9c+H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H"/></svg>
+       </a>
+       <a href="" target="_blank" rel="noopener noreferrer">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20,9V9c+H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H"/></svg>
+       </a>
+       <a href="" target="_blank" rel="noopener noreferrer">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20,9V9c+H, H, H, H, H, H, H,	H,
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RENO FRESHYLA ADITYA PRATAMA — Built with precision &amp; intention.</span>
+      <a href="#hero">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
